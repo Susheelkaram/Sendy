@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_StartServer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="Start Server"
+                android:background="@android:color/holo_green_dark"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btn_StopServer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stop Server"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/txt_ServerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/input_Host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter server address" />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/txt_ConnectionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_Connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:text="Connect"
+            />
+
+        <EditText
+            android:id="@+id/input_Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter message" />
+
+        <Button
+            android:id="@+id/btn_Send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Send"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/txt_MessageStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>
+
